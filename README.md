@@ -14,3 +14,7 @@
 ## Affiliate-ready, not affiliate-active
 
 `affiliate-config.js` keeps monetized links disabled by default. An affiliate URL may be enabled only after the program is actually approved, and the app then shows a disclosure and marks the link as sponsored.
+
+## 収益化ポリシー
+
+共通スロット仕様 v1.0。提携承認済みリンクだけ有効化し、広告表記を付けます。ツール本体は広告なしでも動作します。
