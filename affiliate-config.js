@@ -6,3 +6,4 @@ window.AFFILIATE_CONFIG = {
   n8n:   { enabled: false, url: null },
   adobe: { enabled: false, url: null }
 };
+window.OFFICIAL_LINKS = window.OFFICIAL_LINKS || {};

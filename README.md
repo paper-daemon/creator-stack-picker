@@ -18,3 +18,7 @@
 ## 収益化ポリシー
 
 共通スロット仕様 v1.0。提携承認済みリンクだけ有効化し、広告表記を付けます。ツール本体は広告なしでも動作します。
+
+
+## Affiliate policy
+The tool stays useful without affiliate links. Only approved programs may be enabled, with clear disclosure. Unapproved services use normal official links or no link.
