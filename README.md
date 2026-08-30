@@ -6,6 +6,7 @@
 - GitHub Pagesで動作
 - 現時点のリンクは通常の公式リンク
 - 将来アフィリエイトリンクを使う場合は、承認済みプログラムだけを明示付きで利用
+- [ローカルusage計測の境界](docs/usage-metrics.md)
 
 ## Monetization guard
 
@@ -18,7 +19,6 @@
 ## 収益化ポリシー
 
 共通スロット仕様 v1.0。提携承認済みリンクだけ有効化し、広告表記を付けます。ツール本体は広告なしでも動作します。
-
 
 ## Affiliate policy
 The tool stays useful without affiliate links. Only approved programs may be enabled, with clear disclosure. Unapproved services use normal official links or no link.
