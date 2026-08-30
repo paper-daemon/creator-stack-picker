@@ -7,6 +7,7 @@ global.localStorage={
 };
 global.window={AFFILIATE_CONFIG:{}};
 
+let checked=[{value:'image'}];
 const nodes={
   '#choices':{insertAdjacentHTML(){}},
   '#run':{},
@@ -17,7 +18,7 @@ const nodes={
 };
 global.document={
   querySelector:selector=>nodes[selector],
-  querySelectorAll:selector=>selector==='#choices input:checked'?[{value:'image'}]:[]
+  querySelectorAll:selector=>selector==='#choices input:checked'?checked:[]
 };
 
 require('../app.js');
@@ -33,4 +34,8 @@ usage=JSON.parse(store.get('amase_usage_creator_stack_picker'));
 assert.equal(usage.total,2);
 assert.equal(usage.labels.run,2);
 
-console.log('4 assertions PASS: one click equals one run');
+assert.match(nodes['#cards'].innerHTML,/Adobe Creative Cloud|ConoHa AI Canvas|GIMP/);
+checked=[]; nodes['#run'].onclick();
+assert.equal(nodes['#cards'].innerHTML,'<p>条件を1つ以上選んでください。</p>');
+assert.equal(nodes['#disclosure'].hidden,true);
+console.log('7 assertions PASS: usage remains one-per-click and empty selection yields no ranking');
